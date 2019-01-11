@@ -67,6 +67,34 @@ We don't know yet if all those use cases are valid and/or if we should cover all
   * Encoding - crypto material used for encoding (ZKP)
   * ...
 
+### Across use cases 
+
+Actors:
+* Jan (Software Engineer)
+* Anna (Computer store owner)
+* Post (Postal service)
+* Krzyś (Research scientist)
+* PDC Inc (Package Delivery company
+
+Objects:
+user_address - schema base representing user home address 
+
+
+0) Jan and Post
+Jan visit his local post service `Post` where he identify him self and receive Verifiable Claim which (using `user_address` schema with encoding - crypto overlay on top)  later on can use for different services.
+
+1) Jan and Anna
+Jan want to buy laptop from Anna's store. he login to the online store and purchase choosen laptop. Anna send him identity request to ask for verified address where to send the goods. Jan's `Digital wallet` received this request, display on screen who and what is asking for (use `user_address` schema with consent overlay and sensitive overlay to communicate about PII). Jan accept the consent and `Digital wallet` pulls `user_address` schema from defined data vault and send the information to Anna in a form of Verifable Claim signed by Jan's `Post`. 
+
+2) Anna & PDC Inc
+Anna want to send goods to specific customer, she priory recieved `user_address` schema which she send to `PDC`. `PDC` can verify that address if is valid and that they are able to deliver that package.
+
+3) Jan & Krzyś & Post
+Krzyś is doing research about population within given city. He is sending request to `Post` to help him out asking if they would like to ask their customer who are living within Vienna if they would like to take part in this research. `Krzyś` is using publicly available `user_address` schema with subset overlay to hide all attributes with exception of City name. 
+`Post` sending the request to `Jan` with identity request from `Krzyś`. Where `Jan` needs to reveal only city from his `user_address` schema. Since `Jan` is not available at the time of the request, request is send to his Sovrin Agent. 
+Sovrin Agent received request about specific `user_address` schema and checks that `Jan` consent on being part of any public research helping improving our sociaty and sends back to `Krzyś` Agend proper information requested by `Krzyś`
+
+
 # Why not to use?
 
 * Why not use mixins?
