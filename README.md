@@ -4,49 +4,52 @@ The overlays architecture provides a new modern file format specification for fl
 data composition.
 
 The aim of this document is to explore and attempt to define a generic set of rules,
-constructs, data objects and markup languages that the architecture can support.
+constructs, data objects types and markup languages that the architecture can support.
 
 # Properties
 
-* Discoverability - To allow easy discoverability of each object within a pattern 
-or construct to help drive adoption, reusability and user-friendliness;
+* Discoverability - To allow easy discoverability of each object within a pattern or 
+construct to help drive adoption, reusability and user-friendliness;
 * Identification - To allow identity verification of each object;
 * Versioning - To allow version control of each object;
-* Immutability - To ensure that the state of an object cannot be modified after 
-creation;
-* Interoperability - To allow each object to be reused in different implemented 
-patterns and constructs;
-* Decentralization - To ensure that vendor lock-in and centralized repository 
-dependence can be avoided.
+* Immutability - To ensure that the state of an object cannot be modified post creation;
+* Interoperability - To allow each object to be reused in different implemented patterns 
+and constructs;
+* Decentralization - To ensure that vendor lock-in and centralized repository dependence 
+can be avoided.
 
 # Background
 
-The general overlays concept appears to warrant inclusion in different spaces. 
-Born from the desire to encrypt Personally identifiable information (PII) in a 
-new decentralized data economy, a new modern file format consisting of layered 
-task-oriented objects (overlays) was ultimately conceived. The original use case 
-for overlays had initially been restricted to schema design and data capture 
-constructs but, following Hyperledger Indy semantics discussions involving experts 
-from other facets of the project stack, overlays have since been deemed to warrant 
-inclusion in the build of messaging constructs, verifiable credentials and other 
-data structures within the ecosystem.
+The general overlays concept appears to warrant inclusion in different spaces. Born from 
+the desire to encrypt Personally identifiable information (PII) in a new decentralized 
+data economy, a new modern file format consisting of layered task-oriented objects 
+(overlays) was ultimately conceived. The original use case for overlays had initially 
+been restricted to schema design and data capture constructs but, following Hyperledger 
+Indy semantics discussions involving experts from other facets of the project stack, 
+overlays have been deemed to warrant inclusion in the build of messaging constructs, 
+verifiable credentials and other data structures within the community.
 
 # Overlays 
-## Why we need it?
+## Why do we need them?
 
-We don't know yet. But it is very interesting to evaluate possibility if
-something like that could solve some problems.
+Overlays provide an enhanced architecture and skeletal framework for a number of 
+different data object types. Ongoing research will continue as the extensibility of the 
+architecture within different areas of the project stack is determined.
 
-Some potential problems which could be solved by this approach:
-* Provide unify data language for decentralize economy including: data exchange, data storage, communication etc. 
-* Allow building global decentralize data storage for society benefits
-* Provide an overall framework for dealing with data including consent, privacy, traceability etc.
+The overlays architecture can provide:
+* a unified data language for a decentralized data economy including smarter solutions 
+for data exchange, data storage and communication; 
+* an enhanced data capture solution to enable the build of a global data store for 
+societal benefit;
+* an overall framework for embedded consent, privacy and traceability solutions.
 
-We already started implementing this approach within the schema and overlays concept in Semantic WG. 
-The idea behind `Overlays` is to create unify notation for data which can be used in multiple cases:
+Following ongoing discussions within the Indy Semantics WG, new schema design and data 
+capture constructs are being devloped using the overlays architecture. The idea behind 
+`Overlays` is to create a unified notation for data which can be included in multiple 
+use cases, including:
 
-* Data Vault - as a normalization solution, share and store data.
-* Data capture - collecting data from different sources in a standardize and reusable way
+* Data Vault - as a normalization solution to share and store data.
+* Data capture - collecting data from different sources in a standardized and reusable way
 * File format - Multi-layer file format which separate content, presentation layer, and potential logic layer
 * Verifiable credentials - for example as a reusable schema with different encodings
 
