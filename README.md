@@ -1,28 +1,35 @@
 # Introduction
 
-Overlays pattern is a generic concept for data composition.
+The overlays architecture provides a new modern file format specification for flexible 
+data composition.
 
-The aim of this document is to explore and try to define a generic 
-set of rules and attributes which such a pattern could provide.
+The aim of this document is to explore and attempt to define a generic set of rules,
+constructs, data objects and markup languages that the architecture can support.
 
 # Properties
 
-* Discoverability - Allow easy discoverability of the objects within a pattern. This helps for adoption, reusability, user-friendly etc.
-* Identification - Allow to verify that we are talking about the same layer
-* Versioning - Allow to verify the version of the layer
-* Immutability - Allow to ensure that the layer won't change in the future
-* Interoperability - Allow to reuse same layer independent from any concrete implementation
-* Decentralization - Allow to avoid vendor locking and to not relay on centralize repository
+* Discoverability - To allow easy discoverability of each object within a pattern 
+or construct to help drive adoption, reusability and user-friendliness;
+* Identification - To allow identity verification of each object;
+* Versioning - To allow version control of each object;
+* Immutability - To ensure that the state of an object cannot be modified after 
+creation;
+* Interoperability - To allow each object to be reused in different implemented 
+patterns and constructs;
+* Decentralization - To ensure that vendor lock-in and centralized repository 
+dependence can be avoided.
 
 # Background
 
-It seems that the concept of general overlays seems to be very interesting in
-different spaces. The concept was born some time ago while we thought about new
-modern file format which supposes to be composed out of different layers. Then the
-idea was buried for some time and reborn again within Semantic WG in
-Hyperledger where we started defining schema and overlays for decentralize
-global storage.
-
+The general overlays concept appears to warrant inclusion in different spaces. 
+Born from the desire to encrypt Personally identifiable information (PII) in a 
+new decentralized data economy, a new modern file format consisting of layered 
+task-oriented objects (overlays) was ultimately conceived. The original use case 
+for overlays had initially been restricted to schema design and data capture 
+constructs but, following Hyperledger Indy semantics discussions involving experts 
+from other facets of the project stack, overlays have since been deemed to warrant 
+inclusion in the build of messaging constructs, verifiable credentials and other 
+data structures within the ecosystem.
 
 # Overlays 
 ## Why we need it?
