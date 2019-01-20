@@ -21,16 +21,16 @@ can be avoided.
 # Background
 
 The general overlays concept appears to warrant inclusion in different spaces. Born from 
-the desire to encrypt Personally identifiable information (PII) in a new decentralized 
+the desire to encrypt personally identifiable information (PII) in a new decentralized 
 data economy, a new modern file format consisting of layered task-oriented objects 
 (overlays) was ultimately conceived. The original use case for overlays had initially 
 been restricted to schema design and data capture constructs but, following Hyperledger 
 Indy semantics discussions involving experts from other facets of the project stack, 
 overlays have been deemed to warrant inclusion in the build of messaging constructs, 
-verifiable credentials and other data structures within the community.
+verifiable credentials and other data structures within the ecosystem.
 
 # Overlays 
-## Why do we need them?
+## Why are they useful?
 
 Overlays provide an enhanced architecture and skeletal framework for a number of 
 different data object types. Ongoing research will continue as the extensibility of the 
@@ -48,15 +48,24 @@ capture constructs are being devloped using the overlays architecture. The idea 
 `Overlays` is to create a unified notation for data which can be included in multiple 
 use cases, including:
 
-* Data Vault - as a normalization solution to share and store data.
-* Data capture - collecting data from different sources in a standardized and reusable way
-* File format - Multi-layer file format which separate content, presentation layer, and potential logic layer
-* Verifiable credentials - for example as a reusable schema with different encodings
+* Data Vault - a normalization solution to share and store data;
+* Data capture - a data capture solution enabling data to be collected from different 
+sources in a standardized and reusable way;
+* File format - a multi-layer file format containing a content layer, a presentation 
+layer and an optional logic layer;
+* Verifiable credentials - a ZKP solution involving reusable schema bases with different 
+encoding types.
 
-We don't know yet if all those use cases are valid and/or if we should cover all of them or more. It seems that all of them have a similar nature. Which could be described as follow:
+Other emerging use cases will benefit from the implementation of the overlays architecture 
+but, in all cases, the endpoint data constructs will contain and support the following 
+generic data objects:
 
-* Static or dynamic base - the place where the base subject is (content of the file, schema base for data, database model, protocol data description (schema) etc..)
-* Layers - a different type of layers from static through-composed and ad-hoc layers. They can serve as a coloration, enriching or extending base without the need to change it. 
+* Stable bases - to underpin endpoint constructs in a number of different data centric 
+use cases. These bases will capture construct information regarding use case, data content, 
+orientation, link objects and storage and protocol definitions;
+* Task-oriented layers - to provide contextual and/or conditional information, including 
+enhancements in coloration, enrichment and extensibility, to each stable base object. These 
+layers allow base objects to remain stable and generic thus negating the need for reissue. 
 
 ## Example
 
